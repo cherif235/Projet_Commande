@@ -1,0 +1,132 @@
+
+
+
+/* j'utilise la technique des sprites :
+ * https://openclassrooms.com/courses/bien-utiliser-les-sprites-css
+ */
+
+
+body{
+
+	background:#CA9B6C;
+
+
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+
+}
+/*
+.img {
+	background-image: url('images/fruits_legumes_1.jpg');
+	background-position-x: -375px;
+	background-position-y: -25px;
+	width: 130px;
+	height: 116px;
+  }
+*/
+
+/* Mise en page */
+h1
+{
+	background: blue;
+  text-align:center;
+  font-size:30pt;
+  color:#Black;
+  letter-spacing: 4px;
+  font-weight:140;
+  text-transform:uppercase;
+
+
+	animation-duration: 3s;
+	animation-name: slidein;
+  }@keyframes slidein{
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+aside {
+
+height:700px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 10px ;
+	border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-top:1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-radius: 10px ;
+  padding: 5px 5px;
+
+}
+section.commande {
+	display: flex;
+}
+
+aside.filtres {
+	margin-right: 20px;
+}
+
+.articles {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+  /* debug */
+	border: transparent;
+justify-content: center;
+}
+
+.article {
+	width: 300px;
+	margin: 50px;
+	border: 3px solid black;
+	background-color: white;
+	border-top-right-radius: 40px 40px;
+	border-top-left-radius: 40px 40px;
+	border-bottom-right-radius: 40px 40px;
+	border-style: solid;
+	justify-content: center;
+}
+
+.cadre{
+
+	width: 230px;
+	height: 150px;
+	display:flex; /* Pour le alignement vertical des images */
+	flex-direction: column;  /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+	align-items: center;     /* alignement horizontal */
+
+}
+
+
+.quantite input {
+	width: 30px;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+
+
+}
+
+div.panier table {
+	width: 50%;
+	background-color: white;
+}
+
+td+td {
+	text-align: right;
+	background-color: white
+}
+tfoot {
+	text-align: right;
+}
